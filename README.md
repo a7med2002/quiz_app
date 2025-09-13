@@ -8,9 +8,22 @@ This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Home View
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![home_view](assets/images/home_view.png)
+
+## Levels Descriptions View
+
+![levels_desc_view](assets/images/levels_desc_view.png)
+
+## Timer View
+
+![timer_view](assets/images/timer_view.png)
+
+## True False View
+
+![true_false_view](assets/images/true_false_view.png)
+
+## MCQ View
+
+![mcq_view](assets/images/mcq_view.png)
