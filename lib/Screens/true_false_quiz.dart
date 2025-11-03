@@ -109,6 +109,13 @@ class _TrueFalseQuizState extends State<TrueFalseQuiz> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+    countdownTimer!.cancel();
+    audioPlayer.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(

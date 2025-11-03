@@ -1,38 +1,67 @@
-# quiz_app
+# 🎯 Quiz App 
 
-A new Flutter project.
+## ✅ Project Overview  
+**Quiz App** (also known as *Quizly*) is an interactive quiz application built with **Flutter**.  
+It offers three fun and educational quiz modes — **True/False**, **Multiple Choice**, and **Timed Quizzes** — with engaging UI, smooth animations, and sound effects.  
+This project is ideal as a learning resource or a solid starting point for a more advanced quiz app.
 
-## Description
+---
 
-Quizly App is a quiz app with two types of questions true fasle and multiple choice and every question with timer duaration 10 seconds, and timer with sound, when finish quiz ==> show your score.
+## 🧰 Tech Stack  
+- **Framework:** Flutter  
+- **Language:** Dart (SDK constraint ^3.8.1)  
+- **Packages Used:**  
+  - `rflutter_alert` → for displaying quiz result dialogs  
+  - `audioplayers` → for countdown ticking sounds  
+  - `flutter_launcher_icons` → to generate app icons  
+  - `flutter_lints` → for linting and code style  
+- **Supported Platforms:** Android, iOS
 
-## App Folders:
-- **helepr**: contain constants colors of app.
-- **modules**: contain Data & logic of classes of questions.
-- **screens**: contain Ui of screens.
-- **widgets**: contain custom reusable widgets.
+---
 
-## Packages:
-- **rflutter_alert**: to show an Alert Dialog with buttons.
-- **audioplayers**: to play sound of quiz timer.
+## 🏗 Architecture  
+The app follows a clean and modular structure that separates UI, logic, and reusable components for better maintainability.
 
 
-## Home View
+## ✨ Features  
+- Multiple quiz modes: True/False, Multiple Choice, Timed Quizzes  
+- Countdown timer with animated circular progress  
+- Ticking sound for time-based quizzes  
+- End-of-quiz alerts using `rflutter_alert`  
+- Score tracking and feedback icons  
+- Clean UI with gradient backgrounds and level illustrations  
+- Cross-platform support (Android, iOS, Web)
+
+---
+
+## 🚀 How to Run the Project
+
+1. **Clone the repository**  
+- git clone https://github.com/a7med2002/quiz_app.git
+
+2. **Install dependencies** 
+- flutter pub get
+
+3. **Run the app**
+- flutter run
+
+---
+
+## 🖼️ Screenshots
 
 ![home_view](assets/images/home_view.png)
 
-## Levels Descriptions View
-
 ![levels_desc_view](assets/images/levels_desc_view.png)
-
-## Timer View
 
 ![timer_view](assets/images/timer_view.png)
 
-## True False View
-
 ![true_false_view](assets/images/true_false_view.png)
 
-## MCQ View
-
 ![mcq_view](assets/images/mcq_view.png)
+
+---
+
+## 🌐 Social Links
+- 👨‍💻 Developer: [ِAhmed Meqdad]
+- 📧 Email: [ahmd2002mqdad@gamil.com]
+- 💼 LinkedIn: [linkedin.com/in/ahmed-meqdad](https://www.linkedin.com/in/ahmed-meqdad)

@@ -42,6 +42,7 @@ class _MultipeScreenState extends State<MultipeScreen> {
             timeLeft = 10;
           });
         }
+        audioPlayer.stop();
       }
     });
   }
@@ -70,7 +71,7 @@ class _MultipeScreenState extends State<MultipeScreen> {
 
   void handleFinishedQuiz() {
     countdownTimer?.cancel();
-    audioPlayer.stop();
+    // audioPlayer.stop();
     Future.delayed(
       Duration(seconds: 1),
       () => Alert(
@@ -103,6 +104,13 @@ class _MultipeScreenState extends State<MultipeScreen> {
   void initState() {
     super.initState();
     startTimer();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    countdownTimer!.cancel();
+    audioPlayer.dispose();
   }
 
   @override

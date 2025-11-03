@@ -1,0 +1,1620 @@
+===== D:\Android\kick_lance_project\quiz_app\analysis_options.yaml =====
+# This file configures the analyzer, which statically analyzes Dart code to
+# check for errors, warnings, and lints.
+#
+# The issues identified by the analyzer are surfaced in the UI of Dart-enabled
+# IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
+# invoked from the command line by running `flutter analyze`.
+
+# The following line activates a set of recommended lints for Flutter apps,
+# packages, and plugins designed to encourage good coding practices.
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  # The lint rules applied to this project can be customized in the
+  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
+  # included above or to enable additional rules. A list of all available lints
+  # and their documentation is published at https://dart.dev/lints.
+  #
+  # Instead of disabling a lint rule for the entire project in the
+  # section below, it can also be suppressed for a single line of code
+  # or a specific dart file by using the `// ignore: name_of_lint` and
+  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
+  # producing the lint.
+  rules:
+    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
+    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
+===== D:\Android\kick_lance_project\quiz_app\pubspec.yaml =====
+name: quiz_app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  rflutter_alert: ^2.0.7
+  audioplayers: ^6.5.1
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.14.4"
+  flutter_test:
+    sdk: flutter
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/appIcon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/images/appIcon.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/sounds/tick.mp3
+
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
+===== D:\Android\kick_lance_project\quiz_app\.idea\modules.xml =====
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/quiz_app.iml" filepath="$PROJECT_DIR$/quiz_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/quiz_app_android.iml" filepath="$PROJECT_DIR$/android/quiz_app_android.iml" />
+    </modules>
+  </component>
+</project>
+===== D:\Android\kick_lance_project\quiz_app\.idea\workspace.xml =====
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="main.dart" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/main.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="ToolWindowManager">
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <option name="show-excluded-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="dart.analysis.tool.window.force.activate" value="true" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+</project>
+===== D:\Android\kick_lance_project\quiz_app\.idea\libraries\Dart_SDK.xml =====
+<component name="libraryTable">
+  <library name="Dart SDK">
+    <CLASSES>
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/async" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/collection" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/convert" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/core" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/developer" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/html" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/io" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/isolate" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/math" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/mirrors" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/typed_data" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
+===== D:\Android\kick_lance_project\quiz_app\.idea\libraries\KotlinJavaRuntime.xml =====
+<component name="libraryTable">
+  <library name="KotlinJavaRuntime">
+    <CLASSES>
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-reflect.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-test.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-reflect-sources.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
+===== D:\Android\kick_lance_project\quiz_app\.idea\runConfigurations\main_dart.xml =====
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+    <method />
+  </configuration>
+</component>
+===== D:\Android\kick_lance_project\quiz_app\android\app\src\debug\AndroidManifest.xml =====
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The INTERNET permission is required for development. Specifically,
+         the Flutter tool needs it to communicate with the running application
+         to allow setting breakpoints, to provide hot reload, etc.
+    -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
+===== D:\Android\kick_lance_project\quiz_app\android\app\src\main\AndroidManifest.xml =====
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:label="Quizly"
+        android:name="${applicationName}"
+        android:icon="@mipmap/launcher_icon">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+    </application>
+    <!-- Required to query activities that can process text, see:
+         https://developer.android.com/training/package-visibility and
+         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+
+         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+    </queries>
+</manifest>
+===== D:\Android\kick_lance_project\quiz_app\android\app\src\main\res\drawable\launch_background.xml =====
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modify this file to customize your launch splash screen -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/white" />
+
+    <!-- You can insert your own image assets here -->
+    <!-- <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/launch_image" />
+    </item> -->
+</layer-list>
+===== D:\Android\kick_lance_project\quiz_app\android\app\src\main\res\drawable-v21\launch_background.xml =====
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modify this file to customize your launch splash screen -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="?android:colorBackground" />
+
+    <!-- You can insert your own image assets here -->
+    <!-- <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/launch_image" />
+    </item> -->
+</layer-list>
+===== D:\Android\kick_lance_project\quiz_app\android\app\src\main\res\values\styles.xml =====
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme applied to the Android Window while the process is starting when the OS's Dark Mode setting is off -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Show a splash screen on the activity. Automatically removed when
+             the Flutter engine draws its first frame -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    <!-- Theme applied to the Android Window as soon as the process has started.
+         This theme determines the color of the Android Window while your
+         Flutter UI initializes, as well as behind your Flutter UI while its
+         running.
+
+         This Theme is only used starting with V2 of Flutter's Android embedding. -->
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+</resources>
+===== D:\Android\kick_lance_project\quiz_app\android\app\src\main\res\values-night\styles.xml =====
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme applied to the Android Window while the process is starting when the OS's Dark Mode setting is on -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <!-- Show a splash screen on the activity. Automatically removed when
+             the Flutter engine draws its first frame -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    <!-- Theme applied to the Android Window as soon as the process has started.
+         This theme determines the color of the Android Window while your
+         Flutter UI initializes, as well as behind your Flutter UI while its
+         running.
+
+         This Theme is only used starting with V2 of Flutter's Android embedding. -->
+    <style name="NormalTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+</resources>
+===== D:\Android\kick_lance_project\quiz_app\android\app\src\profile\AndroidManifest.xml =====
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The INTERNET permission is required for development. Specifically,
+         the Flutter tool needs it to communicate with the running application
+         to allow setting breakpoints, to provide hot reload, etc.
+    -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
+===== D:\Android\kick_lance_project\quiz_app\ios\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json =====
+{"images":[{"size":"20x20","idiom":"iphone","filename":"Icon-App-20x20@2x.png","scale":"2x"},{"size":"20x20","idiom":"iphone","filename":"Icon-App-20x20@3x.png","scale":"3x"},{"size":"29x29","idiom":"iphone","filename":"Icon-App-29x29@1x.png","scale":"1x"},{"size":"29x29","idiom":"iphone","filename":"Icon-App-29x29@2x.png","scale":"2x"},{"size":"29x29","idiom":"iphone","filename":"Icon-App-29x29@3x.png","scale":"3x"},{"size":"40x40","idiom":"iphone","filename":"Icon-App-40x40@2x.png","scale":"2x"},{"size":"40x40","idiom":"iphone","filename":"Icon-App-40x40@3x.png","scale":"3x"},{"size":"57x57","idiom":"iphone","filename":"Icon-App-57x57@1x.png","scale":"1x"},{"size":"57x57","idiom":"iphone","filename":"Icon-App-57x57@2x.png","scale":"2x"},{"size":"60x60","idiom":"iphone","filename":"Icon-App-60x60@2x.png","scale":"2x"},{"size":"60x60","idiom":"iphone","filename":"Icon-App-60x60@3x.png","scale":"3x"},{"size":"20x20","idiom":"ipad","filename":"Icon-App-20x20@1x.png","scale":"1x"},{"size":"20x20","idiom":"ipad","filename":"Icon-App-20x20@2x.png","scale":"2x"},{"size":"29x29","idiom":"ipad","filename":"Icon-App-29x29@1x.png","scale":"1x"},{"size":"29x29","idiom":"ipad","filename":"Icon-App-29x29@2x.png","scale":"2x"},{"size":"40x40","idiom":"ipad","filename":"Icon-App-40x40@1x.png","scale":"1x"},{"size":"40x40","idiom":"ipad","filename":"Icon-App-40x40@2x.png","scale":"2x"},{"size":"50x50","idiom":"ipad","filename":"Icon-App-50x50@1x.png","scale":"1x"},{"size":"50x50","idiom":"ipad","filename":"Icon-App-50x50@2x.png","scale":"2x"},{"size":"72x72","idiom":"ipad","filename":"Icon-App-72x72@1x.png","scale":"1x"},{"size":"72x72","idiom":"ipad","filename":"Icon-App-72x72@2x.png","scale":"2x"},{"size":"76x76","idiom":"ipad","filename":"Icon-App-76x76@1x.png","scale":"1x"},{"size":"76x76","idiom":"ipad","filename":"Icon-App-76x76@2x.png","scale":"2x"},{"size":"83.5x83.5","idiom":"ipad","filename":"Icon-App-83.5x83.5@2x.png","scale":"2x"},{"size":"1024x1024","idiom":"ios-marketing","filename":"Icon-App-1024x1024@1x.png","scale":"1x"}],"info":{"version":1,"author":"xcode"}}
+===== D:\Android\kick_lance_project\quiz_app\ios\Runner\Assets.xcassets\LaunchImage.imageset\Contents.json =====
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "LaunchImage.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "LaunchImage@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "LaunchImage@3x.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\main.dart =====
+import 'package:flutter/material.dart';
+import 'package:quiz_app/Screens/home.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Quiz App',
+      debugShowCheckedModeBanner: false,
+      home: Home(),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\helper\color_helper.dart =====
+import 'package:flutter/widgets.dart';
+
+const kBlueIcon = Color(0xff0bbbf6);
+const kRedFont = Color(0xfff45e7a);
+const kGreyFont = Color(0xffb7adac);
+
+const kL1 = Color(0xffed6f9f);
+const kL12 = Color(0xffec8c6a);
+const kL22 = Color(0xff5471ec);
+const kL32 = Color(0xffa28ddc);
+const kL3 = Color(0x0ff4abe7);
+
+const kBlueBg = Color(0xff3293f4);
+const kG1 = Color(0xBCBFFF00);
+===== D:\Android\kick_lance_project\quiz_app\lib\modules\level.dart =====
+import 'package:flutter/widgets.dart';
+
+class Level {
+  final String title;
+  final String image;
+  final IconData icon;
+  final String description;
+  final String subTitle;
+  final List<Color> colors;
+
+  Level({
+    required this.title,
+    required this.subTitle,
+    required this.icon,
+    required this.description,
+    required this.colors,
+    required this.image,
+  });
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\modules\multiple choice\mcq_question.dart =====
+class McqQuestion {
+  final String questionText;
+  final String answer;
+  final List<String> choices;
+
+  McqQuestion({
+    required this.questionText,
+    required this.answer,
+    required this.choices,
+  });
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\modules\multiple choice\multipe_choice_brain.dart =====
+import 'package:quiz_app/modules/multiple%20choice/mcq_question.dart';
+
+class MultipeChoiceBrain {
+  int numberOfQustion = 0;
+  List<McqQuestion> mcqQuestions = [
+    McqQuestion(
+      questionText:
+          " Which programming language is used to build Flutter applications?",
+      answer: "Dart",
+      choices: ["Java", "Kotlin", "Dart"],
+    ),
+    McqQuestion(
+      questionText: "Who developed the Flutter Framework?",
+      answer: "Google",
+      choices: ["Facebook", "Google", "Microsoft"],
+    ),
+    McqQuestion(
+      questionText: "How many types of widgets are there in Flutter?",
+      answer: "Two",
+      choices: ["One", "Two", "Three"],
+    ),
+    McqQuestion(
+      questionText:
+          "Which of the following is used to manage the state of a StatefulWidget?",
+      answer: "State",
+      choices: ["BuildContext", "StatelessWidget", "State"],
+    ),
+  ];
+
+  String getQuestionText() {
+    return mcqQuestions[numberOfQustion].questionText;
+  }
+
+  String getQuestionAnswer() {
+    return mcqQuestions[numberOfQustion].answer;
+  }
+
+  List<String> getQuestionChoices() {
+    return mcqQuestions[numberOfQustion].choices;
+  }
+
+  void nextQuestion() {
+    if (numberOfQustion == mcqQuestions.length - 1) {
+      numberOfQustion = 0;
+    } else {
+      ++numberOfQustion;
+    }
+  }
+
+  bool isFinished() {
+    return numberOfQustion == mcqQuestions.length - 1;
+  }
+
+  bool checkAnswer(String userAnswer) {
+    return getQuestionAnswer() == userAnswer;
+  }
+
+  bool isQuestionNotAnswered(String selectedOption) {
+    return selectedOption.isEmpty;
+  }
+
+  void reset() {
+    numberOfQustion = 0;
+  }
+
+  bool isLastQueation() {
+    return numberOfQustion == mcqQuestions.length - 1;
+  }
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\modules\true false\question.dart =====
+class Question {
+  final String quesText;
+  final bool answer;
+
+  Question({required this.quesText, required this.answer});
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\modules\true false\true_false_brain.dart =====
+import 'package:quiz_app/modules/true%20false/question.dart';
+
+class TrueFalseBrain {
+  int questionNumber = 0;
+  List<Question> questions = [
+    Question(
+      quesText: "Flutter uses Dart as its programming language",
+      answer: true,
+    ),
+    Question(quesText: "Everything in Flutter is a Widget", answer: true),
+    Question(
+      quesText: "Flutter only supports mobile application development",
+      answer: false,
+    ),
+    Question(
+      quesText:
+          "Hot Reload and Hot Restart perform the same function in Flutter",
+      answer: false,
+    ),
+    Question(
+      quesText:
+          "Stateless Widgets can change their internal state during runtime",
+      answer: false,
+    ),
+  ];
+
+  int getNumberOfQuestions() {
+    return questions.length;
+  }
+
+  String getQuestionText() {
+    return questions[questionNumber].quesText;
+  }
+
+  bool getQuestionAnswer() {
+    return questions[questionNumber].answer;
+  }
+
+  void nextQuestion() {
+    if (questionNumber == questions.length - 1) {
+      questionNumber = 0;
+    } else {
+      ++questionNumber;
+    }
+  }
+
+  bool checkAnswer(bool userAnswer) {
+    return getQuestionAnswer() == userAnswer;
+  }
+
+  bool isFinished() {
+    return questionNumber == questions.length - 1;
+  }
+
+  void reset() {
+    questionNumber = 0;
+  }
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\Screens\home.dart =====
+import 'package:flutter/material.dart';
+import 'package:quiz_app/Screens/level_description.dart';
+import 'package:quiz_app/Screens/mcq_quiz.dart';
+import 'package:quiz_app/Screens/multipe_screen.dart';
+import 'package:quiz_app/Screens/true_false_quiz.dart';
+import 'package:quiz_app/helper/color_helper.dart';
+import 'package:quiz_app/modules/level.dart';
+import 'package:quiz_app/widgets/custom_outline_btn.dart';
+import 'package:quiz_app/widgets/level_widget.dart';
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    List<Level> levels = [
+      Level(
+        title: "Level 1",
+        subTitle: "True & False Quiz",
+        icon: Icons.check,
+        description: "This is some true false flutter questions",
+        colors: [kL1, kL12],
+        image: "book.png",
+      ),
+      Level(
+        title: "Level 2",
+        subTitle: "Multiple Choice Quiz",
+        icon: Icons.play_arrow,
+        description: "This is some Multiple Choice flutter questions",
+        colors: [kL22, kBlueIcon],
+        image: "ballons.png",
+      ),
+      Level(
+        title: "Level 3",
+        subTitle: "MCQ Quiz",
+        icon: Icons.card_travel,
+        description: "This is some MCQ flutter questions",
+        colors: [kL32, kL1],
+        image: "camera.png",
+      ),
+    ];
+
+    List<Widget> pages = [
+      TrueFalseQuiz(colors: levels[0].colors),
+      MultipeScreen(colors: levels[1].colors),
+      McqQuiz(),
+    ];
+
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        surfaceTintColor: Colors.transparent,
+        actions: [
+          CustomOutlineBtn(icon: Icons.favorite, size: 20),
+          CustomOutlineBtn(icon: Icons.person_2, size: 25),
+        ],
+      ),
+      body: Padding(
+        padding: EdgeInsetsGeometry.symmetric(horizontal: 16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "Let's Start",
+              style: TextStyle(
+                fontSize: 32,
+                color: kRedFont,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              "Be the first!",
+              style: TextStyle(fontSize: 18, color: kGreyFont),
+            ),
+            SizedBox(height: 24),
+            Expanded(
+              child: ListView.builder(
+                itemCount: levels.length,
+                itemBuilder: (context, index) => LevelWidget(
+                  level: levels[index],
+                  ontap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LevelDescription(
+                        level: levels[index],
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => pages[index]),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\Screens\level_description.dart =====
+import 'package:flutter/material.dart';
+import 'package:quiz_app/modules/level.dart';
+import 'package:quiz_app/widgets/custom_outline_btn.dart';
+
+class LevelDescription extends StatelessWidget {
+  final Level level;
+  final VoidCallback onTap;
+  const LevelDescription({super.key, required this.level, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        padding: EdgeInsets.all(24),
+        width: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(colors: level.colors),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Align(
+              alignment: Alignment.topLeft,
+              child: CustomOutlineBtn(
+                icon: Icons.close,
+                size: 24,
+                iconColor: Colors.white,
+                ontap: () => Navigator.pop(context),
+              ),
+            ),
+            Image.asset(
+              "assets/images/${level.image}",
+              width: 180,
+              height: 180,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(level.title, style: TextStyle(color: Colors.white)),
+                SizedBox(height: 8),
+                Text(
+                  level.subTitle,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 16),
+                Text(level.description, style: TextStyle(color: Colors.white)),
+              ],
+            ),
+            ElevatedButton(
+              onPressed: onTap,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+                foregroundColor: Colors.black,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadiusGeometry.circular(12),
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Text("Game", style: TextStyle(fontSize: 16)),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\Screens\mcq_quiz.dart =====
+import 'package:flutter/material.dart';
+import 'package:quiz_app/Screens/home.dart';
+import 'package:quiz_app/helper/color_helper.dart';
+import 'package:quiz_app/modules/multiple%20choice/multipe_choice_brain.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
+
+class McqQuiz extends StatefulWidget {
+  const McqQuiz({super.key});
+
+  @override
+  State<McqQuiz> createState() => _McqQuizState();
+}
+
+class _McqQuizState extends State<McqQuiz> {
+  List<Icon> scoreKeeper = [];
+  String selectedOption = '';
+  MultipeChoiceBrain multipeChoiceBrain = MultipeChoiceBrain();
+
+  void addUserScore(String selectedOption) {
+    if (multipeChoiceBrain.isQuestionNotAnswered(selectedOption)) {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text("Please answer the question")));
+    } else {
+      setState(() {
+        multipeChoiceBrain.checkAnswer(selectedOption)
+            ? scoreKeeper.add(Icon(Icons.check, color: Colors.green))
+            : scoreKeeper.add(Icon(Icons.close, color: Colors.red));
+      });
+
+      if (multipeChoiceBrain.isFinished()) {
+        Future.delayed(Duration(seconds: 1), () {
+          setState(() {
+            // multipeChoiceBrain.reset();
+            // Show Alert to User
+            Alert(
+              context: context,
+              title: "MCQ Quiz Finished",
+              desc: "good luck 😊",
+              style: AlertStyle(backgroundColor: Colors.white),
+              buttons: [
+                DialogButton(
+                  color: kBlueBg,
+                  child: Text(
+                    "Go to Home",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  onPressed: () {
+                    Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(builder: (context) => Home()),
+                      (route) => false,
+                    );
+                  },
+                ),
+              ],
+            ).show();
+            scoreKeeper.clear();
+          });
+        });
+      } else {
+        setState(() {
+          selectedOption = '';
+        });
+        multipeChoiceBrain.nextQuestion();
+      }
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            // Question Text
+            Expanded(
+              flex: 2,
+              child: Center(
+                child: Text(
+                  multipeChoiceBrain.getQuestionText(),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+            // Choices
+            Expanded(
+              flex: 3,
+              child: ListView.builder(
+                itemCount: multipeChoiceBrain.getQuestionChoices().length,
+                itemBuilder: (context, index) {
+                  return RadioListTile(
+                    title: Text(multipeChoiceBrain.getQuestionChoices()[index]),
+                    value: multipeChoiceBrain.getQuestionChoices()[index],
+                    groupValue: selectedOption,
+                    onChanged: (value) => setState(() {
+                      selectedOption = value!;
+                    }),
+                  );
+                },
+              ),
+            ),
+            // Next Button
+            ElevatedButton(
+              onPressed: () => addUserScore(selectedOption),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+                padding: EdgeInsets.symmetric(vertical: 20),
+              ),
+              child: Text(
+                multipeChoiceBrain.isLastQueation() ? "Finish" : "Next",
+                style: TextStyle(color: Colors.black),
+              ),
+            ),
+            SizedBox(height: 24),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(children: scoreKeeper),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\Screens\multipe_screen.dart =====
+import 'dart:async';
+
+import 'package:flutter/material.dart';
+import 'package:quiz_app/Screens/home.dart';
+import 'package:quiz_app/modules/multiple%20choice/multipe_choice_brain.dart';
+import 'package:quiz_app/widgets/custom_outline_btn.dart';
+import 'package:quiz_app/widgets/custom_timer.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
+import 'package:audioplayers/audioplayers.dart';
+
+class MultipeScreen extends StatefulWidget {
+  final List<Color> colors;
+  const MultipeScreen({super.key, required this.colors});
+
+  @override
+  State<MultipeScreen> createState() => _MultipeScreenState();
+}
+
+class _MultipeScreenState extends State<MultipeScreen> {
+  int? selectedIndex;
+  int numberOfCorrect = 0;
+  MultipeChoiceBrain multipeChoiceBrain = MultipeChoiceBrain();
+  AudioPlayer audioPlayer = AudioPlayer();
+
+  int timeLeft = 10;
+  Timer? countdownTimer;
+
+  void startTimer() {
+    timeLeft = 10;
+    countdownTimer = Timer.periodic(Duration(seconds: 1), (timer) async {
+      if (timeLeft > 0) {
+        await audioPlayer.play(AssetSource("sounds/tick.mp3"));
+        setState(() {
+          timeLeft--;
+        });
+      } else {
+        if (multipeChoiceBrain.isFinished()) {
+          handleFinishedQuiz();
+        } else {
+          setState(() {
+            multipeChoiceBrain.nextQuestion();
+            timeLeft = 10;
+          });
+        }
+        audioPlayer.stop();
+      }
+    });
+  }
+
+  void handleUserAnswer(int index) {
+    setState(() {
+      selectedIndex = index;
+      if (multipeChoiceBrain.getQuestionChoices()[index] ==
+          multipeChoiceBrain.getQuestionAnswer())
+        ++numberOfCorrect;
+    });
+    if (multipeChoiceBrain.isFinished()) {
+      handleFinishedQuiz();
+    } else {
+      Future.delayed(
+        Duration(seconds: 1),
+        () => setState(() {
+          timeLeft = 10;
+          multipeChoiceBrain.nextQuestion();
+
+          selectedIndex = null;
+        }),
+      );
+    }
+  }
+
+  void handleFinishedQuiz() {
+    countdownTimer?.cancel();
+    // audioPlayer.stop();
+    Future.delayed(
+      Duration(seconds: 1),
+      () => Alert(
+        context: context,
+        title: "MCQ Quiz Finished",
+        desc:
+            "Your Score ${numberOfCorrect} / ${multipeChoiceBrain.numberOfQustion + 1}",
+        style: AlertStyle(backgroundColor: Colors.white),
+        buttons: [
+          DialogButton(
+            color: widget.colors[0],
+            child: Text("Go to Home", style: TextStyle(color: Colors.white)),
+            onPressed: () {
+              Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(builder: (context) => Home()),
+                (route) => false,
+              );
+              setState(() {
+                numberOfCorrect = 0;
+              });
+            },
+          ),
+        ],
+      ).show(),
+    );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    startTimer();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    countdownTimer!.cancel();
+    audioPlayer.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        width: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: widget.colors,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+        ),
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+            child: Column(
+              spacing: 50,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    CustomOutlineBtn(
+                      icon: Icons.close,
+                      size: 24,
+                      iconColor: Colors.white,
+                    ),
+                    CustomTimer(timeLeft: timeLeft),
+                    CustomOutlineBtn(
+                      icon: Icons.favorite,
+                      size: 24,
+                      iconColor: Colors.white,
+                    ),
+                  ],
+                ),
+                Image.asset("assets/images/boat.png", width: 200, height: 200),
+                Column(
+                  spacing: 8,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "question ${multipeChoiceBrain.numberOfQustion + 1} of ${multipeChoiceBrain.mcqQuestions.length}",
+                      style: TextStyle(color: Colors.white, fontSize: 16),
+                    ),
+                    Text(
+                      multipeChoiceBrain.getQuestionText(),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+                Expanded(
+                  child: ListView.separated(
+                    separatorBuilder: (context, index) => SizedBox(height: 16),
+                    shrinkWrap: true,
+                    itemCount: multipeChoiceBrain.getQuestionChoices().length,
+                    itemBuilder: (context, index) {
+                      bool isSelected = selectedIndex == index;
+                      return SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton(
+                          onPressed: (isSelected || selectedIndex != null)
+                              ? () => {}
+                              : () => handleUserAnswer(index),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: isSelected
+                                ? (multipeChoiceBrain
+                                              .getQuestionChoices()[index]
+                                              .toLowerCase() ==
+                                          multipeChoiceBrain
+                                              .getQuestionAnswer()
+                                              .toLowerCase()
+                                      ? Colors.green
+                                      : Colors.red)
+                                : Colors.white,
+                            foregroundColor: isSelected
+                                ? Colors.white
+                                : widget.colors[0],
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadiusGeometry.circular(12),
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(16),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                if (isSelected) SizedBox(width: 2),
+                                Text(
+                                  multipeChoiceBrain
+                                      .getQuestionChoices()[index],
+
+                                  style: TextStyle(fontSize: 16),
+                                ),
+                                if (isSelected)
+                                  Icon(
+                                    multipeChoiceBrain
+                                                .getQuestionChoices()[index] ==
+                                            multipeChoiceBrain
+                                                .getQuestionAnswer()
+                                        ? Icons.check
+                                        : Icons.close,
+                                    color: Colors.white,
+                                    size: 24,
+                                  ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\Screens\true_false_quiz.dart =====
+import 'dart:async';
+
+import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/material.dart';
+import 'package:quiz_app/Screens/home.dart';
+import 'package:quiz_app/modules/true%20false/true_false_brain.dart';
+import 'package:quiz_app/widgets/custom_outline_btn.dart';
+import 'package:quiz_app/widgets/custom_timer.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
+
+class TrueFalseQuiz extends StatefulWidget {
+  final List<Color> colors;
+  const TrueFalseQuiz({super.key, required this.colors});
+
+  @override
+  State<TrueFalseQuiz> createState() => _TrueFalseQuizState();
+}
+
+class _TrueFalseQuizState extends State<TrueFalseQuiz> {
+  TrueFalseBrain tfBrain = TrueFalseBrain();
+
+  int? selectedIndex;
+  int numberOfCorrect = 0;
+
+  int timeLeft = 10;
+  Timer? countdownTimer;
+  List<String> options = ["True", "False"];
+
+  AudioPlayer audioPlayer = AudioPlayer();
+
+  @override
+  void initState() {
+    super.initState();
+    startTimer();
+  }
+
+  void startTimer() {
+    timeLeft = 10;
+
+    countdownTimer = Timer.periodic(Duration(seconds: 1), (timer) async {
+      if (timeLeft > 0) {
+        await audioPlayer.play(AssetSource("sounds/tick.mp3"));
+        setState(() {
+          timeLeft--;
+        });
+      } else {
+        if (tfBrain.isFinished()) {
+          handleFinishedQuiz();
+        } else {
+          setState(() {
+            tfBrain.nextQuestion();
+            timeLeft = 10;
+          });
+        }
+      }
+    });
+  }
+
+  void handleUserAnswer(int index) {
+    setState(() {
+      selectedIndex = index;
+      if (options[index].toLowerCase() ==
+          tfBrain.getQuestionAnswer().toString())
+        ++numberOfCorrect;
+    });
+    if (tfBrain.isFinished()) {
+      handleFinishedQuiz();
+    } else {
+      Future.delayed(
+        Duration(seconds: 1),
+        () => setState(() {
+          selectedIndex = null;
+          tfBrain.nextQuestion();
+          timeLeft = 10;
+        }),
+      );
+    }
+  }
+
+  void handleFinishedQuiz() {
+    countdownTimer?.cancel();
+    audioPlayer.stop();
+    Future.delayed(
+      Duration(seconds: 1),
+      () => Alert(
+        context: context,
+        title: "T & F Quiz Finished",
+        desc:
+            "Your Score ${numberOfCorrect} / ${tfBrain.getNumberOfQuestions()}",
+        style: AlertStyle(backgroundColor: Colors.white),
+        buttons: [
+          DialogButton(
+            color: widget.colors[0],
+            child: Text("Go to Home", style: TextStyle(color: Colors.white)),
+            onPressed: () {
+              Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(builder: (context) => Home()),
+                (route) => false,
+              );
+              setState(() {
+                numberOfCorrect = 0;
+              });
+            },
+          ),
+        ],
+      ).show(),
+    );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    countdownTimer!.cancel();
+    audioPlayer.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Container(
+          padding: const EdgeInsets.all(16),
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: widget.colors,
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CustomOutlineBtn(
+                    icon: Icons.close,
+                    size: 24,
+                    iconColor: Colors.white,
+                  ),
+                  CustomTimer(timeLeft: timeLeft),
+                  CustomOutlineBtn(
+                    icon: Icons.favorite,
+                    size: 24,
+                    iconColor: Colors.white,
+                  ),
+                ],
+              ),
+              Image.asset("assets/images/boat.png", width: 200, height: 200),
+              Column(
+                spacing: 8,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "question ${tfBrain.questionNumber + 1} of ${tfBrain.getNumberOfQuestions()}",
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
+                  Text(
+                    tfBrain.getQuestionText(),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+              ListView.separated(
+                shrinkWrap: true,
+                separatorBuilder: (context, index) => SizedBox(height: 16),
+                itemCount: options.length,
+                itemBuilder: (context, index) {
+                  bool isSelected = selectedIndex == index;
+                  return ElevatedButton(
+                    onPressed: (isSelected || selectedIndex != null)
+                        ? () {}
+                        : () => handleUserAnswer(index),
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadiusGeometry.circular(12),
+                      ),
+                      backgroundColor: isSelected
+                          ? (options[index].toLowerCase() ==
+                                    tfBrain.getQuestionAnswer().toString()
+                                ? Colors.green
+                                : Colors.red)
+                          : Colors.white,
+                      foregroundColor: isSelected
+                          ? Colors.white
+                          : widget.colors[0],
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          if (isSelected) SizedBox(width: 2),
+                          Text(options[index], style: TextStyle(fontSize: 16)),
+                          if (isSelected)
+                            Icon(
+                              options[index].toLowerCase() ==
+                                      tfBrain.getQuestionAnswer().toString()
+                                  ? Icons.check
+                                  : Icons.close,
+                              color: Colors.white,
+                              size: 24,
+                            ),
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\widgets\custom_outline_btn.dart =====
+import 'package:flutter/material.dart';
+import 'package:quiz_app/helper/color_helper.dart';
+
+class CustomOutlineBtn extends StatelessWidget {
+  final IconData icon;
+  final double size;
+  final VoidCallback? ontap;
+  final Color iconColor;
+  const CustomOutlineBtn({
+    super.key,
+    required this.icon,
+    required this.size,
+    this.ontap,
+    this.iconColor = kBlueIcon,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return OutlinedButton(
+      child: Icon(icon, size: size, color: iconColor),
+      onPressed: ontap,
+      style: OutlinedButton.styleFrom(
+        shape: CircleBorder(),
+        padding: EdgeInsets.all(10),
+        foregroundColor: iconColor,
+        side: BorderSide(color: kGreyFont),
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\widgets\custom_timer.dart =====
+import 'package:flutter/material.dart';
+
+class CustomTimer extends StatelessWidget {
+  final int timeLeft;
+  const CustomTimer({super.key, required this.timeLeft});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(shape: BoxShape.circle),
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          CircularProgressIndicator(
+            value: timeLeft / 10,
+            backgroundColor: Colors.white.withOpacity(0.3),
+            valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+          ),
+          Text(
+            timeLeft.toString(),
+            style: TextStyle(color: Colors.white, fontSize: 18),
+          ),
+        ],
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\quiz_app\lib\widgets\level_widget.dart =====
+import 'package:flutter/material.dart';
+import 'package:quiz_app/modules/level.dart';
+
+class LevelWidget extends StatelessWidget {
+  final Level level;
+  final VoidCallback ontap;
+  const LevelWidget({super.key, required this.level, required this.ontap});
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: ontap,
+      child: Container(
+        margin: EdgeInsets.only(top: 40, bottom: 50),
+        child: Stack(
+          clipBehavior: Clip.none,
+          alignment: Alignment.topRight,
+          children: [
+            Container(
+              width: double.infinity,
+              padding: EdgeInsets.all(24),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
+                gradient: LinearGradient(
+                  colors: level.colors,
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                ),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      minimumSize: Size(40, 40),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadiusGeometry.circular(12),
+                      ),
+                      padding: EdgeInsets.all(10),
+                      side: BorderSide(color: Colors.white),
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {},
+                    child: Icon(level.icon),
+                  ),
+                  SizedBox(height: 12),
+                  Text(level.title, style: TextStyle(color: Colors.white)),
+                  SizedBox(height: 8),
+                  Text(
+                    level.subTitle,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Positioned(
+              top: -60,
+              right: 20,
+              child: Image.asset(
+                "assets/images/${level.image}",
+                width: 170,
+                height: 170,
+                fit: BoxFit.contain,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\quiz_app\macos\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json =====
+{
+  "images" : [
+    {
+      "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "app_icon_16.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "app_icon_32.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "32x32",
+      "idiom" : "mac",
+      "filename" : "app_icon_32.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "32x32",
+      "idiom" : "mac",
+      "filename" : "app_icon_64.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "128x128",
+      "idiom" : "mac",
+      "filename" : "app_icon_128.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "128x128",
+      "idiom" : "mac",
+      "filename" : "app_icon_256.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "256x256",
+      "idiom" : "mac",
+      "filename" : "app_icon_256.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "256x256",
+      "idiom" : "mac",
+      "filename" : "app_icon_512.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "app_icon_512.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "app_icon_1024.png",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
+===== D:\Android\kick_lance_project\quiz_app\test\widget_test.dart =====
+// This is a basic Flutter widget test.
+//
+// To perform an interaction with a widget in your test, use the WidgetTester
+// utility in the flutter_test package. For example, you can send tap and scroll
+// gestures. You can also use WidgetTester to find child widgets in the widget
+// tree, read text, and verify that the values of widget properties are correct.
+
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+
+import 'package:quiz_app/main.dart';
+
+void main() {
+  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(const MyApp());
+
+    // Verify that our counter starts at 0.
+    expect(find.text('0'), findsOneWidget);
+    expect(find.text('1'), findsNothing);
+
+    // Tap the '+' icon and trigger a frame.
+    await tester.tap(find.byIcon(Icons.add));
+    await tester.pump();
+
+    // Verify that our counter has incremented.
+    expect(find.text('0'), findsNothing);
+    expect(find.text('1'), findsOneWidget);
+  });
+}
+===== D:\Android\kick_lance_project\quiz_app\web\manifest.json =====
+{
+    "name": "quiz_app",
+    "short_name": "quiz_app",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#hexcode",
+    "theme_color": "#hexcode",
+    "description": "A new Flutter project.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
