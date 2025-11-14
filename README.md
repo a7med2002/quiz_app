@@ -61,7 +61,15 @@ The app follows a clean and modular structure that separates UI, logic, and reus
 
 ---
 
+## 📦 Download APK  
+
+You can download the latest version of the **Quiz App** APK directly from Google Drive:  
+
+👉 [**Download Quiz App (APK)**](https://drive.google.com/file/d/1s6_twzQkU7QtG_u0xN6rBN2kVAVCHuvk/view?usp=sharing)  
+
+---
+
 ## 🌐 Social Links
 - 👨‍💻 Developer: [ِAhmed Meqdad]
 - 📧 Email: [ahmd2002mqdad@gamil.com]
-- 💼 LinkedIn: [linkedin.com/in/ahmed-meqdad](https://www.linkedin.com/in/ahmed-meqdad)
+- 💼 LinkedIn: [linkedin.com/in/ahmed-meqdad](https://www.linkedin.com/in/ahmedmeqdad0)
